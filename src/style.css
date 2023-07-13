@@ -34,25 +34,37 @@ h1 {
 	font-weight: bold;
 	color: white;
 	text-shadow: 0.01em 0.02em 0 var(--blue-1);
+    margin: 0;
+    margin-right: 1.3rem;
 }
 
 .header {
-	margin: 0;
-	padding: 0.5em 0 0 0;
+	padding: 1.8rem 0 0 0;
 	font-family: "Roboto Slab", serif;
-	font-size: 5em;
-	line-height: 1em;
 	background: var(--purple-2);
 }
 
 .header-inner {
-	padding: 0.3em 0 0.2em 0.5em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+	font-size: 4rem;
+    line-height: 8rem;
+	padding: 0.3em 0 0.5em 0.5em;
 	background: var(--blue-green-2);
+}
+
+.email-container {
+    display: flex;
+    align-items: flex-end;
 }
 
 .email {
 	font-weight: normal;
 	font-size: 1.5rem;
+    line-height: 3rem;
 	outline: none;
 	text-decoration: none;
 	color: goldenrod;
@@ -63,27 +75,11 @@ h1 {
 	background: var(--blue-green-3);
 }
 
-.cards {
-	margin: 2em 1em 2em 1em;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-}
-
-.card {
-	margin: -0.5em 0 0 -0.5em;
-	font-size: 1.7em;
-	color: var(--blue-1);
-	padding: 0.35em 1em 0.35em 1em;
-	background: var(--blue-6);
-	border-radius: 0.2em;
-}
-
-.card-decoration {
-	padding: 0 1em 1em 0;
-	margin: 2em;
-	background: linear-gradient(to bottom right, var(--purple-3), var(--blue-green-3));
-	border-radius: 0.5em;
+.pane {
+    background-color: #dddddd;
+    border-radius: 0.5em;
+    padding: 0.1rem 1rem 0.1rem 1rem;
+    margin: 0.7rem;
 }
 
 li {
@@ -94,7 +90,6 @@ li {
 	padding: 1em 6em 1em 6em;
 	font-size: 1.5em;
 	color: var(--blue-1);
-	background: var(--blue-6);
 }
 
 @media (max-width: 700px) {
@@ -103,10 +98,11 @@ li {
 	}
 	.header {
 		margin: 0;
-		font-size: 3em;
 	}
 	.header-inner {
 		padding: 0.1em;
+		font-size: 2rem;
+        line-height: 4rem;
 	}
 	.email {
 		font-size: 1rem;
@@ -124,9 +120,10 @@ li {
 	}
 	ul {
 		margin: 0;
+        padding: 0;
 		margin-bottom: 2em;
 	}
 	.body {
-		padding: 1em;
+		padding: 0.5rem;
 	}
 }
